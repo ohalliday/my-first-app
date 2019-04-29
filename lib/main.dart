@@ -4,7 +4,7 @@ import 'package:flutter/foundation.dart';
 import 'dart:async';
 import 'dart:io';
 import 'package:path_provider/path_provider.dart';
-import 'package:http/http.dart';
+// http request package import 'package:http/http.dart';
 
 
 
@@ -32,12 +32,12 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
-class GetData {
-  Future<http.Response> fetchData (http.Client client) async {
-    return client.get('http://jsonplaceholder.typicode.com/photos')
-  }
-}
+// How to fetch data from an external site
+// class GetData {
+//   Future<http.Response> fetchData (http.Client client) async {
+//     return client.get('http://jsonplaceholder.typicode.com/photos')
+//   }
+// }
 
 class CounterStorage {
   Future<String> get _localPath async {
